@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>ReQRdame</title>
+</head>
+
+<body>
+  <!--========================================================== -->
+  <!-- NAVBAR -->
+  <!--========================================================== -->
+
+  <nav class="navbar navbar-expand-sm navbar-light p-1 fixed-top bg-light movile-nav" id="menu">
+    <!--Logo y nombre de la empresa-->
+    <div class="container">
+      <a id="logo">
+        <img src="./img/qr.png" class="img-fluid" style="max-width: 100px; max-height: 50px" disabled>
+      </a>
+      <a class="navbar-brand">
+        <span class="fs-5 fw-bold" style="color:#949419;">ReQRdame</span>
+      </a>
+
+
+      <!--Boton de menu hamburguesa-->
+      <button id="toggleButton" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+      <!--Menu de navegacion-->
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-sm-0 justify-content-center align-items-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#servicios">Tienda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#seccion-contacto">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sobreNosotros.html">Sobre Nosotros</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--========================================================== -->
+  <!-- IMAGEN-->
+  <!--========================================================== -->
+  <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="3000">
+        <img src="./img/hombre.jpg" class="d-block w-100" alt="">
+      </div>
+    </div>
+  </div>
+
+
+
+  <!--========================================================== -->
+  <!-- COMENTARIO INICIAL -->
+  <!--========================================================== -->
+  <section class="d-flex flex-column justify-content-center align-items-center pt-5  text-center w-50 m-auto"
+    id="intro">
+    <h1 class="p-1 fs-2">Requerdos que duran</h1>
+    <h1> <span style="color:#949419">Para siempre</span></h1>
+    <p class="p-3  fs-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur dolorum autem ratione
+      illo? Voluptatibus veritatis provident suscipit harum, repellendus inventore ullam iste tempore possimus esse
+      nulla ex ipsum voluptates earum.</p>
+    <iframe class="video" width="560" height="315"
+      src="https://www.youtube-nocookie.com/embed/pRqeFdMI-u0?si=Ab1PabCdVSiPXinm" title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </section>
+
+
+  <!--========================================================== -->
+  <!-- SERVICIOS -->
+  <!--========================================================== -->
+  <section class="w-100" id="servicios">
+    <!--Primera fila-->
+    <div class="row w-75 mx-auto" id="servicios-fila-1">
+      <!--Servicio 1-->
+      <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap">
+        <img src="./img/reloj2.png" alt="desarrollo" width="180" height="160" class="relojito">
+        <div>
+          <h3 class="fs-5 mt-4 px-4 pb-1">Guardamos tus recuerdos para siempre</h3>
+          <p class="px-4">Siempre estarán disponibles para cualquiera que escanee el codigo QR</p>
+        </div>
+      </div>
+
+      <!--Servicio 2-->
+      <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start  my-5 icono-wrap">
+        <img src="./img/ayuda.jpg" alt="concepto" width="180" height="160">
+        <div>
+          <h3 class="fs-5 mt-4 px-4 pb-1 icono-wrap">Compromiso de largo plazo</h3>
+          <p class="px-4">Podrás actualizar la informacion y videos cuando y donde quieras</p>
+        </div>
+      </div>
+    </div>
+
+    <!--Segunda fila-->
+    <div class="row w-75 mx-auto mb-5" id="servicios-fila-2">
+      <!--Servicio 3-->
+      <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start  my-5 icono-wrap">
+        <img src="./img/seguridad.jpg" alt="comunicaciones" width="180" height="160">
+        <div>
+          <h3 class="fs-5 mt-4 px-4 pb-1">Proteccion de datos en todo momento</h3>
+          <p class="px-4">Tú decides quienes podrán ver los recuerdos</p>
+        </div>
+      </div>
+
+      <!--Servicio 4-->
+      <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap">
+        <img src="./img/money.jpg" alt="seo" width="180" height="140">
+        <div>
+          <h3 class="fs-5 mt-4 px-4 pb-1">Pago Único</h3>
+          <p class="px-4">Servicio de por vida sin costos ocultos ni trampas de suscripción</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--========================================================== -->
+  <!-- ACERCA DE NOSOTROS -->
+  <!--========================================================== -->
+
+  <section class="w-90" id="conocenos">
+    <div class="row w-75 mx-auto" id="servicios-fila-1">
+      <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start align-items-center my-1 icono-wrap">
+        <div>
+          <h2 class="mb-4" style="color:#949419" id="typewriter"></h2>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start align-items-center my-1 icono-wrap">
+        <div>
+          <p class="fs-4 parrafo-centrado">Estamos abiertos a cualquier consulta que quieras resolver, adaptando los
+            recursos necesarios para
+            cada caso. Nuestro equipo de profesionales está capacitado para brindar soluciones con la mayor eficiencia y
+            calidad.
+          </p>
+        </div>
+      </div>
+    </div>
+    <section class="w-100 tunel">
+      <div class="row w-75 mx-auto" id="servicios-fila-1">
+
+
+        <!--Descripcion Ubicación -->
+        <div class="col-lg-12 col-md-12 col-sm-12 d-flex justify-content-start align-items-center my-5 icono-wrap"
+          style="margin:0px;">
+          <div class="wrapper-local text-center" style="margin-top:0px;">
+            <!-- Datos de la compañía -->
+            <section class="d-flex justify-content-center" style="margin-top:0px;">
+              <div class="row w-75 mx-auto">
+                <div class="col-sm-12 col-md-4 separador my-1">
+                  <p class="fs-5 justify-content-center text-center" style="color:#949419; ">+510</p>
+                  <p class="fs-5 justify-content-center text-center">Clientes satisfechos</p>
+                </div>
+                <div class="col-sm-12 col-md-4 separador my-1">
+                  <p class="fs-5 justify-content-center text-center" style="color:#949419;">Una semana</p>
+                  <p class="fs-5 justify-content-center text-center">Tiempo en producir los recuerdos</p>
+                </div>
+                <div class="col-sm-12 col-md-4 separador my-1">
+                  <p class="fs-5 justify-content-center text-center" style="color:#949419;">100%</p>
+                  <p class="fs-5 justify-content-center text-center">A su disposición</p>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--FAQQQ-->
+
+    <section class="faqit">
+      <h2 class="title">Preguntas Frecuentes</h2>
+
+      <div class="faq">
+        <div class="question">
+          <h3>Qué dimensiones tiene el sticker?</h3>
+          <svg width="15" height="10" viewBox="0 0 42 25">
+            <path d=" M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
+          </svg>
+        </div>
+        <div class="answer">
+          <p>La dimension del sticker es de aproximadamente 5x5 cm y es de excelente calidad.</p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <div class="question">
+          <h3>Qué pasa si lo roban o se estropea?</h3>
+          <svg width="15" height="10" viewBox="0 0 42 25">
+            <path d=" M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
+          </svg>
+        </div>
+        <div class="answer">
+          <p>Los stickers son de excelente calidad pero en caso de algun inconveniente se reemplaza sin cargo</p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <div class="question">
+          <h3>Se puede utilizar también para mascotas?</h3>
+          <svg width="15" height="10" viewBox="0 0 42 25">
+            <path d=" M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
+          </svg>
+        </div>
+        <div class="answer">
+          <p>Desde luego, nuestros servicios están orientados tanto para humanos como para mascotas.</p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <div class="question">
+          <h3>Hay que pagar alguna subscripción o renovación en algún momento?</h3>
+          <svg width="15" height="10" viewBox="0 0 42 25">
+            <path d=" M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
+          </svg>
+        </div>
+        <div class="answer">
+          <p>La respuesta es no! Se trata de un servicio que solo se paga una vez y es para siempre.</p>
+        </div>
+      </div>
+
+
+      </div>
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section style="display: flex; align-items: center; justify-content: center;">
+      <h2 class="title">Testimonios</h2>
+    </section>
+    <section class="testimonialsContainer">
+      <div class="testimonialArticle testimonialArticleDark">
+        <header class="testimonialHeader">
+          <img src="images/image-daniel.jpg" alt="" />
+          <section>
+            <h3>Daniel Clifford</h3>
+            <p>Verified Graduate</p>
+          </section>
+        </header>
+        <p class="firtsParagraph">
+          I received a job offer mid-course, and the subjects I learned were
+          current, if not more so, in the company I joined. I honestly feel I
+          got every penny’s worth.
+        </p>
+        <blockquote>
+          <q class="secondParagraph">
+            I was an EMT for many years before I joined the bootcamp. I've been looking to make a transition and have heard some people who had an amazing experience here. I signed up for the free intro course and found it incredibly fun! I enrolled shortly thereafter. The next 12 weeks was the best - and most gruelling - time of my life. Since completing the course, I've successfully switched careers, working as Software Engineer at a VR startup.
+          </q>
+        </blockquote>
+      </div>
+      <div class="testimonialArticle testimonialArticleDark">
+        <header class="testimonialHeader">
+          <img src="images/image-jonathan.jpg" alt="" />
+          <section>
+            <h3>Jonathan Walters</h3>
+            <p>Verified Graduate</p>
+          </section>
+        </header>
+        <p class="firtsParagraph firtsParagraphWhite">
+          The team was very supportive and kept me motivated
+        </p>
+        <blockquote>
+          <q class="secondParagraph">
+            I started as a total newbie with virtually no coding skills. I now
+            work as a mobile engineer for a big company. This was one of the
+            best investments I’ve made in myself.
+          </q>
+        </blockquote>
+      </div>
+      <div class="testimonialArticle testimonialArticleLight">
+        <header class="testimonialHeader">
+          <img src="images/image-jeanette.jpg" alt="" />
+          <section>
+            <h3>Jeanette Harmon</h3>
+            <p>Verified Graduate</p>
+          </section>
+        </header>
+        <p class="firtsParagraph firtsParagraphBlack">
+          An overall wonderful and rewarding experience
+        </p>
+        <blockquote>
+          <q class="secondParagraph">
+            Thank you for the wonderful experience! I now have a job I really
+            enjoy, and make a good living while doing something I love.
+          </q>
+        </blockquote>
+      </div>
+      <div class="testimonialArticle testimonialArticleDark">
+        <header class="testimonialHeader">
+          <img src="images/image-patrick.jpg" alt="" />
+          <section>
+            <h3>Patrick Abrams</h3>
+            <p>Verified Graduate</p>
+          </section>
+        </header>
+        <p class="firtsParagraph firtsParagraphWhite">
+          Awesome teaching support from TAs who did the bootcamp themselves.
+          Getting guidance from them and learning from their experiences was
+          easy.
+        </p>
+        <blockquote>
+          <q class="secondParagraph">
+            The staff seem genuinely concerned about my progress which I find
+            really refreshing. The program gave me the confidence necessary to
+            be able to go out in the world and present myself as a capable
+            junior developer. The standard is above the rest. You will get the
+            personal attention you need from an incredible community of smart
+            and amazing people.
+          </q>
+        </blockquote>
+      </div>
+      <div class="testimonialArticle testimonialArticleLight">
+        <header class="testimonialHeader">
+          <img src="images/image-kira.jpg" alt="" />
+          <section>
+            <h3>Kira Whittle</h3>
+            <p>Verified Graduate</p>
+          </section>
+        </header>
+        <p class="firtsParagraph firtsParagraphBlack">
+          Such a life-changing experience. Highly recommended!
+        </p>
+        <blockquote>
+          <q class="secondParagraph">
+            Before joining the bootcamp, I’ve never written a line of code. I
+            needed some structure from professionals who can help me learn
+            programming step by step. I was encouraged to enroll by a former
+            student of theirs who can only say wonderful things about the
+            program. The entire curriculum and staff did not disappoint. They
+            were very hands-on and I never had to wait long for assistance. The
+            agile team project, in particular, was outstanding. It took my
+            learning to the next level in a way that no tutorial could ever
+            have. In fact, I’ve often referred to it during interviews as an
+            example of my developent experience. It certainly helped me land a
+            job as a full-stack developer after receiving multiple offers. 100%
+            recommend!
+          </q>
+        </blockquote>
+      </div>
+    </section>
+
+
+
+
+    <!--========================================================== -->
+    <!-- WHATSAPP-BUTTON -->
+    <!--========================================================== -->
+    <div class="fixed-button">
+      <a href="https://api.whatsapp.com/send?phone=5491149750605" target="_blank">
+        <img src="./img/whatsapp.png" alt="Botón de imagen">
+      </a>
+    </div>
+
+
+    <!--========================================================== -->
+    <!-- FOOTER -->
+    <!--========================================================== -->
+    <footer class="w-100  d-flex  align-items-center justify-content-center flex-wrap">
+      <p class="fs-5 px-3  pt-3">ReQRdame &copy; Todos Los Derechos Reservados 2024</p>
+      <div id="iconos">
+        <a href="tel:(54)1149750605"><i class="bi bi-phone"></i></a>
+        <a href="mailto:Daniela@hotmail.com"><i class="bi bi-envelope"></i></a>
+        <a href="https://www.instagram.com/reqrdame/" target="_blank"><i class="bi bi-instagram"></i></a>
+
+      </div>
+    </footer>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
