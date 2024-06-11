@@ -131,11 +131,6 @@ button {
         flex-wrap: wrap;
     }
 
-    .mapa img {
-        width: 100%;
-        height: auto;
-    }
-
     #bg-contactos {
         position: relative;
         top: -130px;
