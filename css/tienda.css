@@ -250,3 +250,21 @@ header{
 
     }
 }
+
+@media (max-width: 580px) {
+    .carrito-grande{
+        display: none;
+    }
+}
+
+.carrito-grande {
+    z-index: 1111;
+    position: fixed;
+    top: 13px;
+    /* Ajusta la distancia desde la parte inferior */
+    right: 25px;
+    /* Ajusta la distancia desde la derecha */
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+}
