@@ -216,3 +216,30 @@ header{
     padding: 15px 10px;
     cursor: pointer;
 }
+
+.carrito {
+    position: relative;
+    
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+}
+
+.carrito img {
+    position: absolute;
+    top:1px;
+
+}
+
+.texto-carrito{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+    border-radius: 30%;
+    text-align: center;
+    font-size: 20px;
+    min-width: 16px;
+    left: 50px;
+    top: 22px;
+    
+}
