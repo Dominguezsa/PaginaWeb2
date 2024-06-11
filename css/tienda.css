@@ -170,14 +170,6 @@ header{
 }
 
 /* Main */
-.container-items{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 40px;
-}
 
 .item{
     border-radius: 10px;
