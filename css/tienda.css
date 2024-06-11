@@ -241,5 +241,12 @@ header{
     min-width: 16px;
     left: 50px;
     top: 22px;
-    
+}
+
+@media (min-width: 580px) {
+    .carrito{
+        /* sacar el carrito del html*/
+        display: none;
+
+    }
 }
