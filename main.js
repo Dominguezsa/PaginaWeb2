@@ -78,9 +78,11 @@ inputs.forEach((input) => {
 });
 
 
-const btnCart = document.querySelector('.container-icon')
-const containerCartProducts = document.querySelector('.container-cart-products')
+let cartCount = 0;
 
-btnCart.addEventListener('click', () => {
-    containerCartProducts.classList.toggle('hidden-cart')
-})
+document.querySelectorAll('.add-to-cart-button').forEach(button => {
+  button.addEventListener('click', () => {
+    cartCount++;
+    document.querySelector('.texto-carrito').textContent = cartCount;
+  });
+});
