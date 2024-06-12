@@ -42,6 +42,16 @@
     margin-bottom: 20px;
 }
 
+.btn-outline-primary, .btn-outline-primary:hover{
+    color: #949419;
+    border-color: #949419;
+}
+.btn-outline-primary:hover , .btn-outline-primary:focus, .btn-check:checked + .btn-outline-primary  {
+    color: #fff;
+    background-color: #949419;
+    border-color: #949419;
+}
+
 .btn-outline-primary:focus {
     outline: none !important;
 }
