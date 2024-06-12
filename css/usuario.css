@@ -74,9 +74,19 @@ input.btn-check:focus + label.btn.btn-outline-primary {
     display: none;
 }
 
+.biografia p {
+    text-align: center;
+    justify-content: center;
+}
 
-.video {
+
+.videos {
     display: flex;
     justify-content: center;
-    margin: 10px;
+    align-items: center;
+    margin: 20px;
+}
+
+.videos .video {
+    margin: 10px auto;
 }
