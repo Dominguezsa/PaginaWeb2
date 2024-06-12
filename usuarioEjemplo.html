@@ -32,30 +32,35 @@
         </div>
     </div>
     <div class="btn-group botonesEjemplo" role="group" aria-label="Basic radio toggle button group">
-        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked
+            onchange="mostrarDivCorrespondiente(0)">
         <label class="btn btn-outline-primary" for="btnradio1">Biografia</label>
 
-        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off"
+            onchange="mostrarDivCorrespondiente(1)">
         <label class="btn btn-outline-primary" for="btnradio2">Fotos</label>
 
-        <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off"
+            onchange="mostrarDivCorrespondiente(2)">
         <label class="btn btn-outline-primary" for="btnradio3">Videos</label>
 
-        <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off"
+            onchange="mostrarDivCorrespondiente(3)">
         <label class="btn btn-outline-primary" for="btnradio4">Mensajes</label>
     </div>
-
-    <div class="biografia">
-        <h1>Biografia</h1>
-    </div>
-    <div class="fotos">
-        <h1>Fotos</h1>
-    </div>
-    <div class="videos">
-        <h1>Videos</h1>
-    </div>
-    <div class="mensajes">
-        <h1>Mensajes</h1>
+    <div class="informacionGeneral">
+        <div class="biografia">
+            <h1>Biografia</h1>
+        </div>
+        <div class="fotos">
+            <h1>Fotos</h1>
+        </div>
+        <div class="videos">
+            <h1>Videos</h1>
+        </div>
+        <div class="mensajes">
+            <h1>Mensajes</h1>
+        </div>
     </div>
 
     <!--========================================================== -->
@@ -76,6 +81,7 @@
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="main.js"></script>
+    <script src="usuario.js"></script>
 
 </body>
 

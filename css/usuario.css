@@ -69,3 +69,7 @@ input.btn-check:focus + label.btn.btn-outline-primary {
     border-color: #949419;
     box-shadow: none;
 }
+
+.informacionGeneral > div {
+    display: none;
+}
