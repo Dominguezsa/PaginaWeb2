@@ -73,3 +73,10 @@ input.btn-check:focus + label.btn.btn-outline-primary {
 .informacionGeneral > div {
     display: none;
 }
+
+
+.video {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
