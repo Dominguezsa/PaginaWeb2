@@ -41,3 +41,12 @@
     margin-right: auto;
     margin-bottom: 20px;
 }
+
+.btn-outline-primary:focus {
+    outline: none !important;
+}
+
+input.btn-check:focus + label.btn.btn-outline-primary {
+    outline: none;
+    box-shadow: none;
+}
