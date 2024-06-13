@@ -83,6 +83,19 @@ input.btn-check:focus + label.btn.btn-outline-primary {
     margin-right: auto;
 }
 
+.fotos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.imagenFotos{
+    max-width: 500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 @media (max-width: 768px) {
     .biografia p {
         margin-left: 20px;
