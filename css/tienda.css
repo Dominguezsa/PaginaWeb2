@@ -253,3 +253,28 @@ header{
         width: 45px;
     }
 }
+
+/*===================    PRODUCTOS    ==========================*/
+.productos {
+    width: min(91%, 1300px);
+    margin: 1em auto;
+    margin-bottom: 3em;
+    display: grid;
+    grid-template-columns: minmax(250px, 1fr);
+    gap: 26px;
+}
+
+@media (min-width: 740px){
+    .productos {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+        grid-template-rows: repeat(2, max-content);
+    }
+}
+
+@media (min-width: 1224px){
+    .productos {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    } 
+}
