@@ -563,7 +563,12 @@ svg{
     overflow-x: auto;
     gap: 20px;
     padding: 20px;
-    scrollbar-width: thin;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Para Firefox */
+    scrollbar-width: none;
 }
 
 @media (min-width: 740px){
