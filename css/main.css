@@ -576,3 +576,23 @@ svg{
         grid-template-columns: auto;
     }
 }
+
+.botonParaIrAUsuarioEjemplo {
+    background-color: #949419;
+    color: white;
+    padding: 10px 20px;
+    border-color: #949419;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.botonParaIrAUsuarioEjemplo:hover {
+    background-color: #949419;
+    color: white;
+    border-color: #949419;
+}
