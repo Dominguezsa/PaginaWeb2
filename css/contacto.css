@@ -5,6 +5,13 @@
   box-sizing: border-box;
 }
 
+:root{
+  --texto: #3f3f3f;
+  --textoHover:  #d7d7d7;
+  --fondoForm1: var(--textoHover);
+  --fondoForm2: #e1e1e1;
+}
+
 
 .container2 {
   position: relative;
@@ -21,7 +28,6 @@
   width: 100%;
   max-width: 1200px;
   max-height: 800px;
-  background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -30,7 +36,7 @@
 }
 
 .contact-form2 {
-  background-color: #a8acac;
+  background-color: var(--fondoForm1);
   position: relative;
 }
 
@@ -63,7 +69,7 @@ form {
 }
 
 .title2 {
-  color: #fff;
+  color: var(--texto);
   font-weight: 500;
   font-size: 1.5rem;
   line-height: 1;
@@ -78,10 +84,10 @@ form {
 .input2 {
   width: 100%;
   outline: none;
-  border: 2px solid #fafafa;
+  border: 2px solid var(--texto);
   background: none;
   padding: 0.6rem 1.2rem;
-  color: #fff;
+  color: var(--texto);
   font-weight: 500;
   font-size: 0.95rem;
   letter-spacing: 0.5px;
@@ -103,7 +109,7 @@ textarea.input {
   left: 15px;
   transform: translateY(-50%);
   padding: 0 0.4rem;
-  color: #fafafa;
+  color: var(--texto);
   font-size: 0.9rem;
   font-weight: 400;
   pointer-events: none;
@@ -118,8 +124,8 @@ textarea.input {
 
 .btn2 {
   padding: 0.6rem 1.3rem;
-  background-color: #fff;
-  border: 2px solid #fafafa;
+  background-color: var(--fondoForm1);
+  border: 2px solid var(--texto);
   font-size: 0.95rem;
   color: #000000;
   line-height: 1;
@@ -131,8 +137,8 @@ textarea.input {
 }
 
 .btn2:hover {
-  background-color: transparent;
-  color: #fff;
+  background-color: var(--texto);
+  color: var(--textoHover);
 }
 
 .input-container2 span {
@@ -155,7 +161,7 @@ textarea.input {
   opacity: 0;
   transition: 0.3s;
   height: 5px;
-  background-color: #a8acac;
+  background-color: var(--fondoForm1);
   top: 50%;
   transform: translateY(-50%);
 }
@@ -184,21 +190,21 @@ textarea.input {
 .contact-info2 {
   padding: 2.3rem 2.2rem;
   position: relative;
-  background-color: rgb(155, 155, 155);
+  background-color: var(--fondoForm2);
 }
 
 .contact-info2 .title2 {
-  color: #ffffff;
+  color: var(--texto);
 }
 
 .text2 {
-  color: #ffffff;
+  color: var(--texto);
   margin: 1.5rem 0 2rem 0;
 }
 
 .information2 {
   display: flex;
-  color: #ffffff;
+  color: var(--texto);
   margin: 0.7rem 0;
   align-items: center;
   font-size: 0.95rem;
@@ -208,35 +214,6 @@ textarea.input {
   width: 28px;
   margin-right: 0.7rem;
   filter: contrast(0.01);
-}
-
-.social-media2 {
-  padding: 2rem 0 0 0;
-}
-
-.social-media2 p {
-  color: #333;
-}
-
-.social-icons2 {
-  display: flex;
-  margin-top: 0.5rem;
-}
-
-.social-icons2 a {
-  width: 35px;
-  height: 35px;
-  border-radius: 5px;
-  background: linear-gradient(45deg, #000000, #000000);
-  color: #0a0808;
-  text-align: center;
-  line-height: 35px;
-  margin-right: 0.5rem;
-  transition: 0.3s;
-}
-
-.social-icons2 a:hover {
-  transform: scale(1.05);
 }
 
 .contact-info2:before {
@@ -277,10 +254,6 @@ textarea.input {
   .text2 {
     margin: 1rem 0 1.5rem 0;
   }
-
-  .social-media2 {
-    padding: 1.5rem 0 0 0;
-  }
 }
 
 @media (max-width: 480px) {
@@ -298,19 +271,12 @@ textarea.input {
   }
 
   .text2,
-  .information2,
-  .social-media2 p {
+  .information2 {
     font-size: 0.8rem;
   }
 
   .title2 {
     font-size: 1.15rem;
-  }
-
-  .social-icons2 a {
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
   }
 
   .icon2 {
