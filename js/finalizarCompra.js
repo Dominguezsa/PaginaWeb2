@@ -22,9 +22,9 @@ function renderCartTable() {
       const row = document.createElement('tr');
       row.innerHTML = `
           <td><img src="${product.image}" alt="Product Image" style="width: 50px; height: auto;"></td>
-          <td>${product.id}</td>
-          <td>${product.quantity}</td>
-          <td>${product.price * product.quantity}</td>
+          <td style="text-align: center;">${product.id}</td>
+          <td style="text-align: center;">${product.quantity}</td>
+          <td style="text-align: center;">${product.price * product.quantity}</td>
         `;
       table.appendChild(row);
     });
