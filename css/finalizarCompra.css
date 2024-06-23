@@ -20,18 +20,20 @@
 
 table {
     width: 100%;
-    border: #000 1px solid;
     /* Añadir un borde a la tabla */
     border-collapse: collapse;
+    width: 90%;
 
     /* Asegurar que la tabla use todo el ancho disponible */
 }
 
 th,
 td {
-    padding: 15px;
+    padding: auto;
     /* Aumentar el padding para más espacio alrededor del texto */
     text-align: center;
     /* Asegurar que el texto esté centrado */
-    border: #000 1px solid;
+    border: #b8b8b8 1px solid;
+    border-radius: 90%;
 }
+
