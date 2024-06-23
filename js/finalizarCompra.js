@@ -6,8 +6,9 @@ function renderCartTable() {
   const table = document.createElement('table');
   table.innerHTML = `
     <tr>
-      <th>Foto</th>
-      <th>Product ID</th>
+      <th></th>
+      <th>Producto</th>
+      <th>Cantidad</th>
       <th>Precio</th>
     </tr>
   `;
@@ -22,6 +23,7 @@ function renderCartTable() {
       row.innerHTML = `
           <td><img src="${product.image}" alt="Product Image" style="width: 50px; height: auto;"></td>
           <td>${product.id}</td>
+          <td>${product.quantity}</td>
           <td>${product.price * product.quantity}</td>
         `;
       table.appendChild(row);
