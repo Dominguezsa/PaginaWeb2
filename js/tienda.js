@@ -26,3 +26,18 @@ document.querySelectorAll('.add-to-cart-button').forEach(button => {
     localStorage.setItem('cartContent', JSON.stringify(cartContent));
   });
 });
+
+document.querySelector('.empty-cart-button').addEventListener('click', () => {
+  // Establecer cartContent a un objeto vacío
+  cartContent = {};
+
+  // Restablecer cartCount a 0
+  cartCount = 0;
+
+  // Actualizar el texto del carrito en la interfaz de usuario
+  document.querySelector('.texto-carrito').textContent = cartCount;
+
+  // Guardar el estado actualizado en localStorage
+  localStorage.setItem('cartContent', JSON.stringify(cartContent));
+});
+
