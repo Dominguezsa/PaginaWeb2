@@ -24,20 +24,23 @@ document.querySelectorAll('.add-to-cart-button').forEach(button => {
 
     // Save cartContent to localStorage
     localStorage.setItem('cartContent', JSON.stringify(cartContent));
+    console.log(cartContent);
   });
 });
 
-document.querySelector('.empty-cart-button').addEventListener('click', () => {
-  // Establecer cartContent a un objeto vacío
-  cartContent = {};
+document.addEventListener('DOMContentLoaded', (event) => {
+  // Tu código aquí
+  const emptyCartButton = document.querySelector('.empty-cart-button');
+  if (emptyCartButton) {
+    emptyCartButton.addEventListener('click', () => {
+      // Establecer cartContent a un objeto vacío
+      cartContent = {};
 
-  // Restablecer cartCount a 0
-  cartCount = 0;
+      // Restablecer cartCount a 0
+      cartCount = 0;
 
-  // Actualizar el texto del carrito en la interfaz de usuario
-  document.querySelector('.texto-carrito').textContent = cartCount;
-
-  // Guardar el estado actualizado en localStorage
-  localStorage.setItem('cartContent', JSON.stringify(cartContent));
+      // Actualizar el texto del carrito en la interfaz de usuario
+      document.querySelector('.texto-carrito').textContent = cartCount;
+    });
+  }
 });
-

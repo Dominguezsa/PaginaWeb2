@@ -30,6 +30,10 @@ function renderCartTable() {
     // Insertar la tabla en el DOM
     const container = document.querySelector('#cartTableContainer');
     container.innerHTML = ''; // Limpiar el contenedor antes de añadir la nueva tabla
+    container.style.display = 'flex'; // Usar flexbox
+    container.style.justifyContent = 'center'; // Centrar horizontalmente
+    container.style.alignItems = 'center'; // Centrar verticalmente
+    container.style.flexDirection = 'column'; // Alinear los elementos en columna
     container.appendChild(table);
   }
 }
