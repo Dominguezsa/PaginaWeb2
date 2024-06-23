@@ -1,15 +1,37 @@
-.cartTableContainer p{
+.cartTableContainer p {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
 }
 
-.carritoVacio{
+.carritoVacio {
     display: flex;
     min-height: 80vh;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     font-weight: bold;
     color: #000;
+}
+
+#cartTableContainer {
+    font-size: 18px;
+}
+
+table {
+    width: 100%;
+    border: #000 1px solid;
+    /* Añadir un borde a la tabla */
+    border-collapse: collapse;
+
+    /* Asegurar que la tabla use todo el ancho disponible */
+}
+
+th,
+td {
+    padding: 15px;
+    /* Aumentar el padding para más espacio alrededor del texto */
+    text-align: center;
+    /* Asegurar que el texto esté centrado */
+    border: #000 1px solid;
 }
