@@ -6,10 +6,10 @@ function renderCartTable() {
   const table = document.createElement('table');
   table.innerHTML = `
     <tr>
-      <th></th>
-      <th>Producto</th>
-      <th>Cantidad</th>
-      <th>Precio</th>
+      <th style="text-align: center;"></th>
+      <th style="text-align: center;">Producto</th>
+      <th style="text-align: center;">Cantidad</th>
+      <th style="text-align: center;">Precio</th>
     </tr>
   `;
 
