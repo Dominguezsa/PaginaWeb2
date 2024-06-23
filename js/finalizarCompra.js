@@ -24,7 +24,7 @@ function renderCartTable() {
           <td><img src="${product.image}" alt="Product Image" style="width: 50px; height: auto;"></td>
           <td style="text-align: center;">${product.id}</td>
           <td style="text-align: center;">${product.quantity}</td>
-          <td style="text-align: center;">${product.price * product.quantity}</td>
+          <td style="text-align: center;">$ ${product.price * product.quantity}</td>
         `;
       table.appendChild(row);
     });
@@ -37,6 +37,22 @@ function renderCartTable() {
     container.style.alignItems = 'center'; // Centrar verticalmente
     container.style.flexDirection = 'column'; // Alinear los elementos en columna
     container.appendChild(table);
+    // añadir total de la compra con <p> centrado en id="total"
+    let total = 0;
+    Object.values(cartContent).forEach(product => {
+      total += product.price * product.quantity;
+    });
+
+    let elementoTotal = document.querySelector('#cartTableContainer');
+
+    // Crear un nodo de texto con el total de la compra
+    let textoTotal = document.createTextNode(`Total de la compra: $${total}`);
+    
+    // Añadir el nodo de texto al elemento seleccionado
+    elementoTotal.appendChild(textoTotal);
+
+    // Asegúrate de que el CSS para el elemento con id "cartTableContainer" esté configurado para centrar el texto
+
   }
 }
 
