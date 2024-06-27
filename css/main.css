@@ -468,8 +468,6 @@ svg{
     margin: 1em auto;
     margin-bottom: 3em;
     display: grid;
-
-    grid-template-columns: minmax(250px, 1fr);
     gap: 26px;
     cursor: grab;
     user-select: none;
@@ -595,4 +593,8 @@ svg{
     background-color: #949419;
     color: white;
     border-color: #949419;
+}
+
+.testimonialArticle{
+    width: 300px;
 }
