@@ -18,7 +18,7 @@ function renderCartTable() {
     const container = document.querySelector('#cartTableContainer');
     //vaciar el contenedor antes de añadir el mensaje
     container.innerHTML = ''; // Limpiar el contenedor antes de añadir el mensaje
-    container.innerHTML = '<p style="display:flex; justify-content: center; align-items:center; margin-top: 50%;"class="carritoVacio">El carrito está vacío</p>'; // Mostrar mensaje
+    container.innerHTML = '<p class="carritoVacio">El carrito está vacío</p>'; // Mostrar mensaje
   } else {
     Object.values(cartContent).forEach(product => {
       const row = document.createElement('tr');
