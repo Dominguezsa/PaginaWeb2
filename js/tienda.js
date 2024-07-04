@@ -28,19 +28,14 @@ document.querySelectorAll('.add-to-cart-button').forEach(button => {
   });
 });
 
-document.addEventListener('DOMContentLoaded', (event) => {
-  // Tu código aquí
+document.addEventListener('DOMContentLoaded', () => {
   const emptyCartButton = document.querySelector('.empty-cart-button');
   if (emptyCartButton) {
     emptyCartButton.addEventListener('click', () => {
       // Establecer cartContent a un objeto vacío
-      cartContent = {};
-
-      // Restablecer cartCount a 0
-      cartCount = 0;
-
-      // Actualizar el texto del carrito en la interfaz de usuario
-      document.querySelector('.texto-carrito').textContent = cartCount;
+      let cartContent = {};
+      document.querySelector('.texto-carrito').textContent = 0;
+      localStorage.setItem('cartContent', JSON.stringify(cartContent));
     });
   }
 });

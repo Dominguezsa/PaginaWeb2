@@ -7,7 +7,6 @@
 
 .carritoVacio {
     display: flex;
-    min-height: 80vh;
     justify-content: center;
     align-items: center;
     font-weight: bold;
