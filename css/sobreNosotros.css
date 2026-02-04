@@ -34,6 +34,7 @@
 .heading p{
     font-size: 20px;
     margin-top: 20px;
+    color: #3f3f3f;
 }
 
 .container2{
@@ -71,29 +72,19 @@
 .about-content h2{
     font-size: 23px;
     margin-bottom: 15px;
-    color: darkslategrey;
+    color: #3f3f3f;
 }
 
 .about-content p{
     font-size: 18px;
     line-height: 1.8;
-    color: #666;
+    color: #3f3f3f;
 }
 
 .ultima{
     margin-bottom: 100px;
 }
 
-.about-content{
-    display: inline-block;
-    padding: 10px 20px;
-    color: #fff;
-    font-size: 18px;
-    text-decoration: none;
-    border-radius: 25px;
-    margin-top: 15px;
-    transition: 0.3s ease;
-}
 
 @media screen and (max-width: 770px){
     .heading{
