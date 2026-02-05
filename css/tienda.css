@@ -200,6 +200,12 @@ header{
     gap: 10px;
 }
 
+.product-description{
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #555;
+}
+
 .price{
     font-size: 18px;
     font-weight: 900;
