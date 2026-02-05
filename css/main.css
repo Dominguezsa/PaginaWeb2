@@ -5,6 +5,7 @@
 body {
     font-family: "Domine", serif;
     overflow-x: hidden;
+    padding-top: 100px;
 }
 
 
@@ -166,6 +167,10 @@ button {
 #servicios {
     scroll-margin-top: 56px;
     /* Ajusta este valor según el tamaño de tu barra de navegación */
+}
+
+#intro {
+    padding-top: 6rem;
 }
 
 .container {
