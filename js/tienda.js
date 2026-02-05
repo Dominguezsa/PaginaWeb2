@@ -5,6 +5,17 @@ document.querySelector('.texto-carrito').textContent = cartCount;
 document.querySelectorAll('.add-to-cart-button').forEach(button => {
   button.addEventListener('click', () => {
     let productId = button.dataset.productId; // assuming each button has a data-product-id attribute
+    let qtyInputId = button.dataset.qtyId; // get the quantity input id
+    let quantity = 1;
+    
+    // Get quantity from input if it exists
+    if (qtyInputId) {
+      let qtyInput = document.getElementById(qtyInputId);
+      if (qtyInput) {
+        quantity = parseInt(qtyInput.value) || 1;
+      }
+    }
+    
     let product = {
       id: productId,
       image: button.dataset.image, // assuming each button has a data-image attribute
@@ -12,9 +23,9 @@ document.querySelectorAll('.add-to-cart-button').forEach(button => {
       // add more attributes as needed
     };
     if (cartContent[productId]) {
-      cartContent[productId].quantity++;
+      cartContent[productId].quantity += quantity;
     } else {
-      product.quantity = 1;
+      product.quantity = quantity;
       cartContent[productId] = product;
     }
 
