@@ -25,26 +25,56 @@ function renderCartTable() {
       row.innerHTML = `
           <td><img src="${product.image}" alt="Product Image" style="width: 50px; height: auto;"></td>
           <td style="text-align: center;">${product.id}</td>
-          <td style="text-align: center;">${product.quantity}</td>
+          <td style="text-align: center;">
+            <div style="display: flex; align-items: center; justify-content: center; gap: 10px;">
+              <button class="qty-btn qty-decrease" data-product-id="${product.id}" style="padding: 5px 10px; cursor: pointer;">-</button>
+              <span class="qty-value" data-product-id="${product.id}">${product.quantity}</span>
+              <button class="qty-btn qty-increase" data-product-id="${product.id}" style="padding: 5px 10px; cursor: pointer;">+</button>
+            </div>
+          </td>
           <td style="text-align: center;">$ ${product.price * product.quantity}</td>
         `;
       table.appendChild(row);
-      // Insertar la tabla en el DOM
-      const container = document.querySelector('#cartTableContainer');
-      container.innerHTML = ''; // Limpiar el contenedor antes de añadir la nueva tabla
-      container.style.display = 'flex'; // Usar flexbox
-      container.style.justifyContent = 'center'; // Centrar horizontalmente
-      container.style.alignItems = 'center'; // Centrar verticalmente
-      container.style.flexDirection = 'column'; // Alinear los elementos en columna
-      container.appendChild(table);
-      let total = 0;
-      Object.values(cartContent).forEach(product => {
-        total += product.price * product.quantity;
-      });
-      let elementoTotal = document.querySelector('#cartTableContainer');
-      let textoTotal = document.createTextNode(`Total de la compra: $${total}`);
-      elementoTotal.appendChild(textoTotal);
     });
+    
+    // Insertar la tabla en el DOM
+    const container = document.querySelector('#cartTableContainer');
+    container.innerHTML = ''; // Limpiar el contenedor antes de añadir la nueva tabla
+    container.style.display = 'flex'; // Usar flexbox
+    container.style.justifyContent = 'center'; // Centrar horizontalmente
+    container.style.alignItems = 'center'; // Centrar verticalmente
+    container.style.flexDirection = 'column'; // Alinear los elementos en columna
+    container.appendChild(table);
+    
+    // Agregar eventos a los botones de cantidad
+    document.querySelectorAll('.qty-btn').forEach(button => {
+      button.addEventListener('click', (e) => {
+        const productId = e.target.dataset.productId;
+        const isIncrease = e.target.classList.contains('qty-increase');
+        
+        if (cartContent[productId]) {
+          if (isIncrease) {
+            cartContent[productId].quantity++;
+          } else if (cartContent[productId].quantity > 1) {
+            cartContent[productId].quantity--;
+          }
+          
+          // Guardar cambios en localStorage
+          localStorage.setItem('cartContent', JSON.stringify(cartContent));
+          
+          // Re-renderizar la tabla
+          renderCartTable();
+        }
+      });
+    });
+    
+    let total = 0;
+    Object.values(cartContent).forEach(product => {
+      total += product.price * product.quantity;
+    });
+    let elementoTotal = document.querySelector('#cartTableContainer');
+    let textoTotal = document.createTextNode(`Total de la compra: $${total}`);
+    elementoTotal.appendChild(textoTotal);
   }
 }
 
