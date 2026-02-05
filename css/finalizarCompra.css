@@ -15,7 +15,26 @@
 
 .form2 {
     max-height: 3000px;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    justify-items: center;
+    padding: 2rem 1.5rem;
 } 
+
+.checkout-summary {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cartTableContainer {
+    width: 100%;
+}
+
+table {
+    margin: 0 auto;
+}
 
 table {
     width: 100%;
