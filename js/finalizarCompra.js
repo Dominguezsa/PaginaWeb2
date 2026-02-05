@@ -30,6 +30,10 @@ function renderCartTable() {
     if (totalElement) {
       totalElement.textContent = formatTotal(0);
     }
+    const checkoutMessage = document.querySelector('#checkoutMessage');
+    if (checkoutMessage) {
+      checkoutMessage.style.display = 'none';
+    }
   } else {
     Object.values(cartContent).forEach(product => {
       const row = document.createElement('tr');
@@ -66,13 +70,17 @@ function renderCartTable() {
         if (cartContent[productId]) {
           if (isIncrease) {
             cartContent[productId].quantity++;
-          } else if (cartContent[productId].quantity > 1) {
+          } else if (cartContent[productId].quantity > 0) {
             cartContent[productId].quantity--;
           }
-          
+
+          if (cartContent[productId].quantity === 0) {
+            delete cartContent[productId];
+          }
+
           // Guardar cambios en localStorage
           localStorage.setItem('cartContent', JSON.stringify(cartContent));
-          
+
           // Re-renderizar la tabla
           renderCartTable();
         }
@@ -88,6 +96,10 @@ function renderCartTable() {
     const totalElement = document.querySelector('#checkoutTotal');
     if (totalElement) {
       totalElement.textContent = totalAmount;
+    }
+    const checkoutMessage = document.querySelector('#checkoutMessage');
+    if (checkoutMessage) {
+      checkoutMessage.style.display = total > 0 ? 'block' : 'none';
     }
 
     const elementoTotal = document.querySelector('#cartTableContainer');
