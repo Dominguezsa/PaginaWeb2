@@ -173,6 +173,10 @@ button {
     padding-top: 6rem;
 }
 
+#que-hacemos {
+    padding-top: 2rem;
+}
+
 .container {
     display: flex;
     justify-content: center;
